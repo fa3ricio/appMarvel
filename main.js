@@ -159,15 +159,7 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 const environment = {
-    production: false,
-    apiUrl: 'http://gateway.marvel.com/v1/public/',
-    apiPublicKey: '259d79888a01634527fcd76951f071a1',
-    settings: {
-        appTitle: 'Code Hero © MARVEL',
-        version: '0.0.0',
-        charactersLimit: 100,
-        extrasLimit: 6
-    }
+    production: false
 };
 /*
  * For easier debugging in development mode, you can import the following file
@@ -216,7 +208,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("span.item-title {\r\n  display: block;\r\n  font: normal normal 700 24px/36px 'PT Sans';\r\n  padding: 10px 0;\r\n  margin: 40px 0 0;\r\n  text-align: center;\r\n  border-bottom: 1px solid #dbdbdb;\r\n}\r\n\r\nspan.item-info-title {\r\n  display: block;\r\n  font: normal normal 700 20px/22px 'PT Sans';\r\n  padding: 10px 0;\r\n}\r\n\r\n.item-content {\r\n  margin-bottom: 30px;\r\n  min-height: 560px;\r\n  padding: 20px;\r\n  position: relative;\r\n  box-shadow: 0 26px 24px -16px rgb(0 0 0 / 40%);\r\n}\r\n\r\n.item-thumb img {\r\n  cursor: pointer;\r\n  transition: all .2s ease-in;\r\n}\r\n\r\n.item-thumb img:hover {\r\n  box-shadow: 0 18px 18px -12px rgb(0 0 0 / 60%);\r\n  margin-top: -6px;\r\n}\r\n\r\n.link-item {\r\n  bottom: 20px;\r\n  position: absolute;\r\n}\r\n\r\n.imageMedium {\r\n  max-height: 300px;\r\n  max-width: 300px;\r\n  object-fit: contain;\r\n  width: 100%;\r\n}\r\n\r\n.imageSmall {\r\n  max-height: 295px;\r\n  max-width: 200px;\r\n  width: 100%;\r\n}\r\n\r\n.modal {\r\n  background: transparent;\r\n  border-radius: 8px;\r\n  box-shadow: none;\r\n  min-width: 320px;\r\n  position: fixed;\r\n  left: 50%;\r\n  padding: 24px;\r\n  top: 50%;\r\n  transform: translate(-50%, -50%);\r\n  z-index: 12;\r\n  display: block;\r\n  transition: all .4s ease-in-out;\r\n  width: 100%;\r\n}\r\n\r\n.modal-content {\r\n  border: none;\r\n  box-shadow: 0 2px 14px rgb(20, 20, 20);\r\n}\r\n\r\n.modal-header {\r\n  border: none;\r\n}\r\n\r\n.modal-title {\r\n  font-weight: 700;\r\n}\r\n\r\n.modal-dialog {\r\n  margin-top: 0;\r\n}\r\n\r\n.image-modal {\r\n  width: 100%;\r\n  max-width: 500px;\r\n}\r\n\r\n.close {\r\n  font-size: 36px;\r\n  line-height: 16px;\r\n}\r\n\r\n.close:hover {\r\n  color: #e95e5c;\r\n}\r\n\r\n.overlay {\r\n  background: #000;\r\n  height: 100vh;\r\n  left: 0;\r\n  opacity: 0.8;\r\n  position: fixed;\r\n  top: 0;\r\n  width: 100vw;\r\n  z-index: 11;\r\n  transition: all .4s ease-in-out;\r\n  padding: 20px;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNoYXJhY3Rlci1kZXRhaWwtZXh0cmFzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0VBQ2QsMkNBQTJDO0VBQzNDLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLGNBQWM7RUFDZCwyQ0FBMkM7RUFDM0MsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixpQkFBaUI7RUFDakIsYUFBYTtFQUNiLGtCQUFrQjtFQUNsQiw4Q0FBOEM7QUFDaEQ7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0UsOENBQThDO0VBQzlDLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLFlBQVk7RUFDWixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLG1CQUFtQjtFQUNuQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLHVCQUF1QjtFQUN2QixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixlQUFlO0VBQ2YsU0FBUztFQUNULGFBQWE7RUFDYixRQUFRO0VBQ1IsZ0NBQWdDO0VBQ2hDLFdBQVc7RUFDWCxjQUFjO0VBQ2QsK0JBQStCO0VBQy9CLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFlBQVk7RUFDWixzQ0FBc0M7QUFDeEM7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLE9BQU87RUFDUCxZQUFZO0VBQ1osZUFBZTtFQUNmLE1BQU07RUFDTixZQUFZO0VBQ1osV0FBVztFQUNYLCtCQUErQjtFQUMvQixhQUFhO0FBQ2YiLCJmaWxlIjoiY2hhcmFjdGVyLWRldGFpbC1leHRyYXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInNwYW4uaXRlbS10aXRsZSB7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgZm9udDogbm9ybWFsIG5vcm1hbCA3MDAgMjRweC8zNnB4ICdQVCBTYW5zJztcclxuICBwYWRkaW5nOiAxMHB4IDA7XHJcbiAgbWFyZ2luOiA0MHB4IDAgMDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNkYmRiZGI7XHJcbn1cclxuXHJcbnNwYW4uaXRlbS1pbmZvLXRpdGxlIHtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICBmb250OiBub3JtYWwgbm9ybWFsIDcwMCAyMHB4LzIycHggJ1BUIFNhbnMnO1xyXG4gIHBhZGRpbmc6IDEwcHggMDtcclxufVxyXG5cclxuLml0ZW0tY29udGVudCB7XHJcbiAgbWFyZ2luLWJvdHRvbTogMzBweDtcclxuICBtaW4taGVpZ2h0OiA1NjBweDtcclxuICBwYWRkaW5nOiAyMHB4O1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBib3gtc2hhZG93OiAwIDI2cHggMjRweCAtMTZweCByZ2IoMCAwIDAgLyA0MCUpO1xyXG59XHJcblxyXG4uaXRlbS10aHVtYiBpbWcge1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxuICB0cmFuc2l0aW9uOiBhbGwgLjJzIGVhc2UtaW47XHJcbn1cclxuXHJcbi5pdGVtLXRodW1iIGltZzpob3ZlciB7XHJcbiAgYm94LXNoYWRvdzogMCAxOHB4IDE4cHggLTEycHggcmdiKDAgMCAwIC8gNjAlKTtcclxuICBtYXJnaW4tdG9wOiAtNnB4O1xyXG59XHJcblxyXG4ubGluay1pdGVtIHtcclxuICBib3R0b206IDIwcHg7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG59XHJcblxyXG4uaW1hZ2VNZWRpdW0ge1xyXG4gIG1heC1oZWlnaHQ6IDMwMHB4O1xyXG4gIG1heC13aWR0aDogMzAwcHg7XHJcbiAgb2JqZWN0LWZpdDogY29udGFpbjtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmltYWdlU21hbGwge1xyXG4gIG1heC1oZWlnaHQ6IDI5NXB4O1xyXG4gIG1heC13aWR0aDogMjAwcHg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5tb2RhbCB7XHJcbiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XHJcbiAgYm9yZGVyLXJhZGl1czogOHB4O1xyXG4gIGJveC1zaGFkb3c6IG5vbmU7XHJcbiAgbWluLXdpZHRoOiAzMjBweDtcclxuICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgbGVmdDogNTAlO1xyXG4gIHBhZGRpbmc6IDI0cHg7XHJcbiAgdG9wOiA1MCU7XHJcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbiAgei1pbmRleDogMTI7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgdHJhbnNpdGlvbjogYWxsIC40cyBlYXNlLWluLW91dDtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLm1vZGFsLWNvbnRlbnQge1xyXG4gIGJvcmRlcjogbm9uZTtcclxuICBib3gtc2hhZG93OiAwIDJweCAxNHB4IHJnYigyMCwgMjAsIDIwKTtcclxufVxyXG5cclxuLm1vZGFsLWhlYWRlciB7XHJcbiAgYm9yZGVyOiBub25lO1xyXG59XHJcblxyXG4ubW9kYWwtdGl0bGUge1xyXG4gIGZvbnQtd2VpZ2h0OiA3MDA7XHJcbn1cclxuXHJcbi5tb2RhbC1kaWFsb2cge1xyXG4gIG1hcmdpbi10b3A6IDA7XHJcbn1cclxuXHJcbi5pbWFnZS1tb2RhbCB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgbWF4LXdpZHRoOiA1MDBweDtcclxufVxyXG5cclxuLmNsb3NlIHtcclxuICBmb250LXNpemU6IDM2cHg7XHJcbiAgbGluZS1oZWlnaHQ6IDE2cHg7XHJcbn1cclxuXHJcbi5jbG9zZTpob3ZlciB7XHJcbiAgY29sb3I6ICNlOTVlNWM7XHJcbn1cclxuXHJcbi5vdmVybGF5IHtcclxuICBiYWNrZ3JvdW5kOiAjMDAwO1xyXG4gIGhlaWdodDogMTAwdmg7XHJcbiAgbGVmdDogMDtcclxuICBvcGFjaXR5OiAwLjg7XHJcbiAgcG9zaXRpb246IGZpeGVkO1xyXG4gIHRvcDogMDtcclxuICB3aWR0aDogMTAwdnc7XHJcbiAgei1pbmRleDogMTE7XHJcbiAgdHJhbnNpdGlvbjogYWxsIC40cyBlYXNlLWluLW91dDtcclxuICBwYWRkaW5nOiAyMHB4O1xyXG59XHJcblxyXG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("span.item-title {\r\n  display: block;\r\n  font: normal normal 700 24px/36px 'PT Sans';\r\n  padding: 10px 0;\r\n  margin: 40px 0 0;\r\n  text-align: center;\r\n  border-bottom: 1px solid #dbdbdb;\r\n}\r\n\r\nspan.item-info-title {\r\n  display: block;\r\n  font: normal normal 700 20px/22px 'PT Sans';\r\n  padding: 10px 0;\r\n}\r\n\r\n.item-content {\r\n  margin-bottom: 30px;\r\n  min-height: 560px;\r\n  padding: 20px;\r\n  position: relative;\r\n  box-shadow: 0 26px 24px -16px rgb(0 0 0 / 40%);\r\n}\r\n\r\n.link-item {\r\n  bottom: 20px;\r\n  position: absolute;\r\n}\r\n\r\n.imageMedium {\r\n  max-height: 300px;\r\n  max-width: 300px;\r\n  object-fit: contain;\r\n  width: 100%;\r\n}\r\n\r\n.imageSmall {\r\n  max-height: 295px;\r\n  max-width: 200px;\r\n  width: 100%;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNoYXJhY3Rlci1kZXRhaWwtZXh0cmFzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0VBQ2QsMkNBQTJDO0VBQzNDLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLGNBQWM7RUFDZCwyQ0FBMkM7RUFDM0MsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixpQkFBaUI7RUFDakIsYUFBYTtFQUNiLGtCQUFrQjtFQUNsQiw4Q0FBOEM7QUFDaEQ7O0FBRUE7RUFDRSxZQUFZO0VBQ1osa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGdCQUFnQjtFQUNoQixtQkFBbUI7RUFDbkIsV0FBVztBQUNiOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2IiLCJmaWxlIjoiY2hhcmFjdGVyLWRldGFpbC1leHRyYXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInNwYW4uaXRlbS10aXRsZSB7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgZm9udDogbm9ybWFsIG5vcm1hbCA3MDAgMjRweC8zNnB4ICdQVCBTYW5zJztcclxuICBwYWRkaW5nOiAxMHB4IDA7XHJcbiAgbWFyZ2luOiA0MHB4IDAgMDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNkYmRiZGI7XHJcbn1cclxuXHJcbnNwYW4uaXRlbS1pbmZvLXRpdGxlIHtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICBmb250OiBub3JtYWwgbm9ybWFsIDcwMCAyMHB4LzIycHggJ1BUIFNhbnMnO1xyXG4gIHBhZGRpbmc6IDEwcHggMDtcclxufVxyXG5cclxuLml0ZW0tY29udGVudCB7XHJcbiAgbWFyZ2luLWJvdHRvbTogMzBweDtcclxuICBtaW4taGVpZ2h0OiA1NjBweDtcclxuICBwYWRkaW5nOiAyMHB4O1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBib3gtc2hhZG93OiAwIDI2cHggMjRweCAtMTZweCByZ2IoMCAwIDAgLyA0MCUpO1xyXG59XHJcblxyXG4ubGluay1pdGVtIHtcclxuICBib3R0b206IDIwcHg7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG59XHJcblxyXG4uaW1hZ2VNZWRpdW0ge1xyXG4gIG1heC1oZWlnaHQ6IDMwMHB4O1xyXG4gIG1heC13aWR0aDogMzAwcHg7XHJcbiAgb2JqZWN0LWZpdDogY29udGFpbjtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmltYWdlU21hbGwge1xyXG4gIG1heC1oZWlnaHQ6IDI5NXB4O1xyXG4gIG1heC13aWR0aDogMjAwcHg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuIl19 */");
 
 /***/ }),
 
@@ -264,7 +256,7 @@ CharactersNotFoundComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decor
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ng-container *ngIf=\"itemContent$ | async; let items\">\n\n  <div *ngIf=\"items.data.results.length\" class=\"row\">\n    <div class=\"col-xl-12\">\n      <div class=\"character-items\">\n        <span class=\"text-uppercase item-title\">{{ itemType }}</span><br>\n        <div class=\"row p-0\">\n          <ng-container *ngFor=\"let item of items.data.results\">\n          <div class=\"col-xl-4\">\n            <div class=\"item-content card\">\n              <div class=\"item-thumb text-center mb-2 mt-4\">\n                <ng-container *ngIf=\"item.thumbnail.path; else notImage\">\n                  <a (click)=\"openModal(item.id, item.title, item.thumbnail.path,item.thumbnail.extension) \">\n                    <img src=\"{{ item.thumbnail.path}}.{{item.thumbnail.extension}}\" title=\"{{ item.title }}\"\n                    [ngClass]=\"{\n                      'imageMedium': itemType === 'Séries' || itemType === 'Eventos',\n                      'imageSmall': itemType === 'Comics'\n                    }\" loading=\"lazy\" />\n                  </a>\n                </ng-container>\n                <ng-template #notImage>\n                  <img src=\"http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg\" title=\"Image not found!\"\n                  [ngClass]=\"{\n                    'imageMedium': itemType === 'Séries' || itemType === 'Eventos',\n                    'imageSmall': itemType === 'Comics'\n                  }\" loading=\"lazy\" />\n                </ng-template>\n              </div>\n              <div class=\"item-info\">\n                <span class=\"item-info-title\">{{ item.title }}</span>\n                <p>{{ item.description | excerpt: 110 }}</p>\n                <ng-container *ngFor=\"let url of item.urls\">\n                  <ng-container *ngIf=\"url.type === 'detail'\">\n                    <a href=\"{{url.url}}\" class=\"btn btn-outline-secondary link-item\" target=\"_blank\">Veja mais</a>\n                  </ng-container>\n                </ng-container>\n              </div>\n            </div>\n            </div>\n          </ng-container>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <ng-container *ngIf=\"mostrarModal\">\n    <div #extras class=\"modal\" id=\"extras_{{ itemType }}_{{ idModal }}\" tabindex=\"-1\"\n        role=\"dialog\" aria-labelledby=\"extrasModal\" aria-hidden=\"true\" (click)=\"toggle()\">\n      <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">\n        <div class=\"modal-content\">\n          <div class=\"modal-header\">\n            <h5 class=\"modal-title\" id=\"extrasModalLabel\"><span>{{ itemTitle }}</span></h5>\n            <button type=\"button\" class=\"close btn\" data-dismiss=\"modal\" aria-label=\"Close\" (click)=\"toggle()\">\n              <span aria-hidden=\"true\">&times;</span>\n            </button>\n          </div>\n          <div class=\"modal-body\">\n            <img src=\"{{ itemModal }}\" class=\"image-modal\" />\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"overlay\"></div>\n  </ng-container>\n</ng-container>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ng-container *ngIf=\"itemContent$ | async; let items\">\n\n  <div *ngIf=\"items.data.results.length\" class=\"row\">\n    <div class=\"col-xl-12\">\n      <div class=\"character-items\">\n        <span class=\"text-uppercase item-title\">{{ itemType }}</span><br>\n        <div class=\"row p-0\">\n          <ng-container *ngFor=\"let item of items.data.results\">\n          <div class=\"col-xl-4\">\n            <div class=\"item-content card\">\n              <div class=\"item-thumb text-center mb-2 mt-4\">\n                <ng-container *ngIf=\"item.thumbnail.path; else notImage\">\n                  <img src=\"{{ item.thumbnail.path}}.{{item.thumbnail.extension}}\" title=\"{{ item.title }}\"\n                  [ngClass]=\"{\n                    'imageMedium': itemType === 'Séries' || itemType === 'Eventos',\n                    'imageSmall': itemType === 'Comics'\n                  }\" loading=\"lazy\" />\n                </ng-container>\n                <ng-template #notImage>\n                  <img src=\"http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg\" title=\"Image not found!\"\n                  [ngClass]=\"{\n                    'imageMedium': itemType === 'Séries' || itemType === 'Eventos',\n                    'imageSmall': itemType === 'Comics'\n                  }\" loading=\"lazy\" />\n                </ng-template>\n              </div>\n              <div class=\"item-info\">\n                <span class=\"item-info-title\">{{ item.title }}</span>\n                <p>{{ item.description | excerpt: 110 }}</p>\n                <ng-container *ngFor=\"let url of item.urls\">\n                  <ng-container *ngIf=\"url.type === 'detail'\">\n                    <a href=\"{{url.url}}\" class=\"btn btn-outline-secondary link-item\" target=\"_blank\">Veja mais</a>\n                  </ng-container>\n                </ng-container>\n              </div>\n            </div>\n            </div>\n          </ng-container>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</ng-container>\n");
 
 /***/ }),
 
@@ -277,7 +269,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container-in\" *ngIf=\"character; else loading\">\n  <ng-container *ngFor=\"let person of character\">\n\n    <!-- Details Start -->\n\n    <div class=\"header-featured\">\n      <div class=\"title-character\">\n        <span>{{ person.name | split }}</span>\n      </div>\n\n      <div class=\"filter-featured\">\n        <div class=\"image-detail-featured\"\n          style=\"background-image: url('{{ person.thumbnail.path }}.{{ person.thumbnail.extension }}');\"></div>\n      </div>\n    </div>\n\n    <div class=\"container character-detail my-4\">\n      <div class=\"container-white sup\">\n        <div class=\"row\">\n          <div class=\"col-xl-8\">\n            <div class=\"image-detail\"\n              style=\"background-image: url('{{ person.thumbnail.path }}.{{ person.thumbnail.extension }}');\"></div>\n          </div>\n          <div class=\"col-xl-4\">\n            <div class=\"title-detail\">\n              <h1>{{ person.name }}</h1>\n            </div>\n            <div class=\"description-character-detail\">\n              <ng-container *ngIf=\"person.description; else descriptionOff\">\n                <p>{{ person.description }}</p>\n              </ng-container>\n              <ng-template #descriptionOff>\n                {{ person.name | split }} ainda não tem uma descrição.\n              </ng-template>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <app-character-detail-extras [itemType]=\"'Comics'\" [itemContent$]=\"comics$\"></app-character-detail-extras>\n      <app-character-detail-extras [itemType]=\"'Séries'\" [itemContent$]=\"series$\"></app-character-detail-extras>\n      <app-character-detail-extras [itemType]=\"'Eventos'\" [itemContent$]=\"events$\"></app-character-detail-extras>\n\n      <div class=\"row mt-4\">\n        <div class=\"col-xl-12\">\n          <a (click)=\"goBack()\" class=\"btn btn-secondary\">\n            <svg style=\"vertical-align: text-bottom; margin-right: 8px\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\"\n              height=\"20\" fill=\"#FFFFFF\" class=\"bi bi-arrow-left-short\" viewBox=\"0 0 16 16\">\n              <path fill-rule=\"evenodd\"\n                d=\"M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z\" />\n            </svg>\n            Voltar\n          </a>\n        </div>\n      </div>\n\n    </div>\n\n    <!-- Details End-->\n\n  </ng-container>\n<div>\n\n<ng-template #loading>\n  <app-loader [fullLoader]=\"false\"></app-loader>\n</ng-template>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container-in\" *ngIf=\"character; else loading\">\n  <ng-container *ngFor=\"let person of character\">\n\n    <!-- Details Start -->\n\n    <div class=\"header-featured\">\n      <div class=\"title-character\">\n        <span>{{ person.name | split }}</span>\n      </div>\n\n      <div class=\"filter-featured\">\n        <div class=\"image-detail-featured\"\n          style=\"background-image: url('{{ person.thumbnail.path }}.{{ person.thumbnail.extension }}');\"></div>\n      </div>\n    </div>\n\n    <div class=\"container character-detail my-4\">\n      <div class=\"container-white sup\">\n        <div class=\"row\">\n          <div class=\"col-xl-8\">\n            <div class=\"image-detail\"\n              style=\"background-image: url('{{ person.thumbnail.path }}.{{ person.thumbnail.extension }}');\"></div>\n          </div>\n          <div class=\"col-xl-4\">\n            <div class=\"title-detail\">\n              <h1>{{ person.name }}</h1>\n            </div>\n            <div class=\"description-character-detail\">\n              <ng-container *ngIf=\"person.description; else descriptionOff\">\n                <p>{{ person.description }}</p>\n              </ng-container>\n              <ng-template #descriptionOff>\n                {{ person.name | split }} ainda não tem uma descrição.\n              </ng-template>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <app-character-detail-extras [itemType]=\"'Comics'\" [itemContent$]=\"comics$\"></app-character-detail-extras>\n      <app-character-detail-extras [itemType]=\"'Séries'\" [itemContent$]=\"series$\"></app-character-detail-extras>\n      <app-character-detail-extras [itemType]=\"'Eventos'\" [itemContent$]=\"events$\"></app-character-detail-extras>\n\n      <div class=\"row mt-4\">\n        <div class=\"col-xl-12\">\n          <a routerLink=\"/\" routerLinkActive=\"active-link\" class=\"btn btn-secondary\">\n            <svg style=\"vertical-align: text-bottom; margin-right: 8px\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\"\n              height=\"20\" fill=\"#FFFFFF\" class=\"bi bi-arrow-left-short\" viewBox=\"0 0 16 16\">\n              <path fill-rule=\"evenodd\"\n                d=\"M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z\" />\n            </svg>\n            Voltar\n          </a>\n        </div>\n      </div>\n\n    </div>\n\n    <!-- Details End-->\n\n  </ng-container>\n<div>\n\n<ng-template #loading>\n  <app-loader [fullLoader]=\"false\"></app-loader>\n</ng-template>\n");
 
 /***/ }),
 
@@ -351,11 +343,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let CharacterDetailComponent = class CharacterDetailComponent {
-    constructor(charactersService, listCharactersService, route, router) {
+    constructor(charactersService, listCharactersService, route) {
         this.charactersService = charactersService;
         this.listCharactersService = listCharactersService;
         this.route = route;
-        this.router = router;
         this.characterId = +this.route.snapshot.paramMap.get('id');
         this.characterId ? this.characterId = this.characterId : this.characterId = 0;
     }
@@ -398,11 +389,6 @@ let CharacterDetailComponent = class CharacterDetailComponent {
         this.series$ = this.charactersService.getCharacterSeries(this.characterId);
         this.events$ = this.charactersService.getCharacterEvents(this.characterId);
     }
-    goBack() {
-        this.listCharactersService.page$.subscribe(page => {
-            this.router.navigate(["/"], { queryParams: { p: page }, relativeTo: this.route });
-        });
-    }
     goTop() {
         window.scroll({
             top: 0,
@@ -414,8 +400,7 @@ let CharacterDetailComponent = class CharacterDetailComponent {
 CharacterDetailComponent.ctorParameters = () => [
     { type: app_api_services_characters_service__WEBPACK_IMPORTED_MODULE_5__["CharactersService"] },
     { type: app_api_services_listCharacters_service__WEBPACK_IMPORTED_MODULE_6__["ListCharactersService"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] }
 ];
 CharacterDetailComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
@@ -444,8 +429,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "IheW");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "qCKp");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../environments/environment */ "AytR");
-
 
 
 
@@ -454,16 +437,14 @@ __webpack_require__.r(__webpack_exports__);
 let CharactersService = class CharactersService {
     constructor(http) {
         this.http = http;
-        this.API_URL = _environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].apiUrl;
-        this.CHARACTERS_URL = 'characters';
-        this.PUBLIC_API_KEY = _environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].apiPublicKey;
-        this.CHARACTERS_LIMIT = _environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].settings.charactersLimit;
-        this.EXTRAS_LIMIT = _environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].settings.extrasLimit;
+        this.API_URL = 'https://gateway.marvel.com';
+        this.CHARACTERS_URL = '/v1/public/characters';
+        this.PUBLIC_API_KEY = '259d79888a01634527fcd76951f071a1';
     }
     getCharacters(limit, offset, observe = 'body', reportProgress = false) {
         let limitList;
         let offsetList;
-        limit ? limitList = `limit=${limit}&` : limitList = this.CHARACTERS_LIMIT;
+        limit ? limitList = `limit=${limit}&` : limitList = '';
         offset ? offsetList = `offset=${offset}&` : offsetList = '';
         const url = `${this.API_URL}${this.CHARACTERS_URL}?${limitList}${offsetList}apikey=${this.PUBLIC_API_KEY}`;
         return this.http.get(url, {
@@ -481,9 +462,7 @@ let CharactersService = class CharactersService {
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["take"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError('getCharacterDetail', [])));
     }
     getCharacterComics(id, observe = 'body', reportProgress = false) {
-        let limitExtras;
-        this.EXTRAS_LIMIT ? limitExtras = `limit=${this.EXTRAS_LIMIT}&` : limitExtras = '';
-        const url = `${this.API_URL}${this.CHARACTERS_URL}/${id}/comics?${limitExtras}apikey=${this.PUBLIC_API_KEY}`;
+        const url = `${this.API_URL}${this.CHARACTERS_URL}/${id}/comics?limit=6&apikey=${this.PUBLIC_API_KEY}`;
         return this.http.get(url, {
             observe: observe,
             reportProgress: reportProgress
@@ -491,9 +470,7 @@ let CharactersService = class CharactersService {
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["take"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError('getComicsCollection', [])));
     }
     getCharacterEvents(id, observe = 'body', reportProgress = false) {
-        let limitExtras;
-        this.EXTRAS_LIMIT ? limitExtras = `limit=${this.EXTRAS_LIMIT}&` : limitExtras = '';
-        const url = `${this.API_URL}${this.CHARACTERS_URL}/${id}/events?${limitExtras}apikey=${this.PUBLIC_API_KEY}`;
+        const url = `${this.API_URL}${this.CHARACTERS_URL}/${id}/events?limit=6&apikey=${this.PUBLIC_API_KEY}`;
         return this.http.get(url, {
             observe: observe,
             reportProgress: reportProgress
@@ -501,9 +478,7 @@ let CharactersService = class CharactersService {
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["take"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError('getEventsCollection', [])));
     }
     getCharacterSeries(id, observe = 'body', reportProgress = false) {
-        let limitExtras;
-        this.EXTRAS_LIMIT ? limitExtras = `limit=${this.EXTRAS_LIMIT}&` : limitExtras = '';
-        const url = `${this.API_URL}${this.CHARACTERS_URL}/${id}/series?${limitExtras}apikey=${this.PUBLIC_API_KEY}`;
+        const url = `${this.API_URL}${this.CHARACTERS_URL}/${id}/series?limit=6&apikey=${this.PUBLIC_API_KEY}`;
         return this.http.get(url, {
             observe: observe,
             reportProgress: reportProgress
@@ -548,8 +523,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "8Y7J");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "qCKp");
 /* harmony import */ var app_api_services_characters_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/api/services/characters.service */ "NF7u");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
-
 
 
 
@@ -561,7 +534,6 @@ let ListCharactersService = class ListCharactersService {
         this.detailCharacterSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"]([]);
         this.limit = 50;
         this.offset = undefined;
-        this.page = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](1);
     }
     get listCharacters$() {
         return this.listCharactersSubject.asObservable();
@@ -569,19 +541,15 @@ let ListCharactersService = class ListCharactersService {
     get detailCharacter$() {
         return this.detailCharacterSubject.asObservable();
     }
-    get page$() {
-        return this.page.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["take"])(1));
-    }
-    getPage(page) {
-        this.page$.subscribe(() => this.page.next(page));
-    }
     getListCharacters() {
         let checkList;
         this.listCharacters$.subscribe(list => {
             checkList = list;
             if (checkList.length === 0) {
                 this.charactersService.getCharacters(this.limit, this.offset)
-                    .subscribe(result => this.listCharactersSubject.next(Object.assign({}, result)));
+                    .subscribe(result => {
+                    this.listCharactersSubject.next(Object.assign({}, result));
+                });
             }
         });
     }
@@ -594,7 +562,9 @@ let ListCharactersService = class ListCharactersService {
                 this.charactersService.getCharacterDetail(id)
                     .subscribe(character => {
                     listArray.push(character);
-                    listArray.forEach((characterDetails) => this.detailCharacterSubject.next(Object.assign({}, characterDetails)));
+                    listArray.forEach((characterDetails) => {
+                        this.detailCharacterSubject.next(Object.assign({}, characterDetails));
+                    });
                 });
             }
         });
@@ -691,7 +661,7 @@ __webpack_require__.r(__webpack_exports__);
 
 let AppComponent = class AppComponent {
     constructor() {
-        this.title = 'Code Hero © MARVEL';
+        this.title = 'Teste de Front-end Objective';
         this.subtitle = 'Data provided by Marvel. © 2022 MARVEL';
     }
 };
@@ -765,23 +735,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let CharacterDetailExtrasComponent = class CharacterDetailExtrasComponent {
-    constructor() {
-        this.mostrarModal = false;
-    }
-    toggle() {
-        this.mostrarModal = !this.mostrarModal;
-        this.bodyOverflow();
-    }
-    openModal(id, title, path, extension) {
-        this.mostrarModal = !this.mostrarModal;
-        this.idModal = id;
-        this.itemTitle = title;
-        this.itemModal = path + '.' + extension;
-        this.bodyOverflow();
-    }
-    bodyOverflow() {
-        this.mostrarModal ? document.querySelector('.body').style.overflowY = 'hidden' : document.querySelector('.body').style.overflowY = 'auto';
-    }
 };
 CharacterDetailExtrasComponent.propDecorators = {
     itemContent$: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
@@ -821,8 +774,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_characters_characters_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/characters/characters.module */ "69wn");
 /* harmony import */ var _pages_components_header_header_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/components/header/header.component */ "pI0V");
 /* harmony import */ var _pages_components_footer_footer_footer_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/components/footer/footer/footer.component */ "PglK");
-/* harmony import */ var _shared_shares_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./shared/shares.module */ "Lo0o");
-
 
 
 
@@ -848,8 +799,7 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["BrowserModule"],
             _pages_characters_characters_module__WEBPACK_IMPORTED_MODULE_9__["CharactersModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
-            _shared_shares_module__WEBPACK_IMPORTED_MODULE_12__["SharedModule"]
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]
         ],
         providers: [
             _api_services_characters_service__WEBPACK_IMPORTED_MODULE_7__["CharactersService"],
@@ -1097,55 +1047,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _raw_loader_characters_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./characters.component.html */ "zfEj");
 /* harmony import */ var _characters_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./characters.component.css */ "DiOw");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "8Y7J");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "iInd");
-/* harmony import */ var app_api_services_listCharacters_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! app/api/services/listCharacters.service */ "OpsF");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
-
-
+/* harmony import */ var app_api_services_listCharacters_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! app/api/services/listCharacters.service */ "OpsF");
 
 
 
 
 
 let CharactersComponent = class CharactersComponent {
-    constructor(listCharactersService, router, route) {
+    constructor(listCharactersService) {
         this.listCharactersService = listCharactersService;
-        this.router = router;
-        this.route = route;
-        this.currentPage = 1;
-        this.page = 1;
-        this.configPagination = {
-            currentPage: 1,
-            itemsPerPage: 10,
-            id: 'characters-pagination'
-        };
+        this.itemsPerPage = 10;
     }
     ngOnInit() {
         if (!this.listCharacters || !this.listCharacters.length) {
             this.listCharactersService.getListCharacters();
             this.listCharactersService.listCharacters$
-                .subscribe(list => this.listCharacters = list);
+                .subscribe(list => {
+                this.listCharacters = list;
+            });
         }
-        this.getPage();
-    }
-    getPage() {
-        this.route.queryParamMap
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["map"])(params => params.get("p")))
-            .subscribe(page => (this.configPagination.currentPage = page));
-    }
-    pageChange(newPage) {
-        this.currentPage = newPage;
-        this.listCharactersService.getPage(newPage);
-        this.listCharactersService.page$.subscribe(atualPage => {
-            this.page = atualPage;
-            this.router.navigate([""], { queryParams: { p: newPage } });
-        });
     }
 };
 CharactersComponent.ctorParameters = () => [
-    { type: app_api_services_listCharacters_service__WEBPACK_IMPORTED_MODULE_5__["ListCharactersService"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] }
+    { type: app_api_services_listCharacters_service__WEBPACK_IMPORTED_MODULE_4__["ListCharactersService"] }
 ];
 CharactersComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
@@ -1301,7 +1225,7 @@ AppRoutingModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"search-box-characters\">\n  <h1>Busca de personagens</h1>\n  <span>Nome do personagem</span>\n\n  <div class=\"form-group has-search\">\n    <span class=\"icon-search\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" fill=\"#8e8e8e\" class=\"bi bi-search\" viewBox=\"0 0 16 16\">\n      <path d=\"M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z\"/>\n    </svg>\n  </span>\n    <input placeholder=\"Search\" #searchBox id=\"search-box\" (keyup)=\"search(searchBox.value)\" autocomplete=\"off\" />\n  </div>\n\n  <ul class=\"search-result\" *ngIf=\"characters$ | async; let characters\">\n    <li *ngFor=\"let character of characters\" >\n      <a routerLink=\"/characters/{{character.id}}\" routerLinkActive=\"active-link\">\n        <img src=\"{{ character.thumbnail.path }}.{{ character.thumbnail.extension }}\" />\n        {{ character.name }}\n      </a>\n    </li>\n  </ul>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"search-box-characters\">\n  <h1>Busca de personagens</h1>\n  <span>Nome do personagem</span>\n\n  <div class=\"form-group has-search\">\n    <span class=\"icon-search\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" fill=\"#8e8e8e\" class=\"bi bi-search\" viewBox=\"0 0 16 16\">\n      <path d=\"M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z\"/>\n    </svg>\n  </span>\n    <input placeholder=\"Search\" #searchBox id=\"search-box\" (keyup)=\"search(searchBox.value)\" autocomplete=\"off\" />\n  </div>\n\n  <ul class=\"search-result\" *ngIf=\"characters$ | async; let characters\">\n    <li *ngFor=\"let character of characters\" >\n      <a routerLink=\"/characters/{{character.id}}\">\n        <img src=\"{{ character.thumbnail.path }}.{{ character.thumbnail.extension }}\" />\n        {{ character.name }}\n      </a>\n    </li>\n  </ul>\n</div>\n");
 
 /***/ }),
 
@@ -1314,7 +1238,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".search-result li {\r\n  border-bottom: 1px solid var(--background-color);\r\n  width: 30%;\r\n  height: 45px;\r\n  background-color: #FFFFFF;\r\n  cursor: pointer;\r\n  list-style-type: none;\r\n}\r\n\r\n.search-result li:hover {\r\n  background-color: #8d8d8d;\r\n}\r\n\r\n.search-result li a {\r\n  color: #888888;\r\n  display: block;\r\n  text-decoration: none;\r\n}\r\n\r\n.search-result li a:hover {\r\n  color: #FFFFFF;\r\n}\r\n\r\n.search-result li a:active {\r\n  color: white;\r\n}\r\n\r\n.search-result li a img {\r\n  width: 45px;\r\n  height: 45px;\r\n  margin-right: 8px;\r\n}\r\n\r\n#search-box {\r\n  width: 100%;\r\n  max-width: 295px;\r\n  height: 32px;\r\n  margin-right: 8px;\r\n  font: italic normal normal 16px/24px 'PT Sans';\r\n  letter-spacing: 0px;\r\n  color: var(--text-color);\r\n  background: #FFFFFF 0% 0% no-repeat padding-box;\r\n  border: 1px solid #E5E5E5;\r\n  border-radius: 4px;\r\n  margin-top: 8px;\r\n  transition: box-shadow 0.2s;\r\n  padding: 4px 8px;\r\n}\r\n\r\n#search-box:focus {\r\n  border-color: #8c8c8d;\r\n  box-shadow: 0px 0px 5px #00000033;\r\n  outline: none;\r\n}\r\n\r\n#search-box-characters h1,\r\n#search-box-characters span {\r\n  display: block;\r\n  color: var(--text-color);\r\n  font: normal normal 700 16px/24px 'PT Sans';\r\n}\r\n\r\n#search-box-characters h1 {\r\n  font: normal normal 700 32px/30px 'PT Sans';\r\n}\r\n\r\nul.search-result {\r\n  margin-top: 8px;\r\n  padding-left: 0;\r\n}\r\n\r\n.has-search {\r\n  position: relative;\r\n  max-width: 295px;\r\n  height: 32px;\r\n}\r\n\r\n.has-search > .icon-search {\r\n  position: absolute;\r\n  top: 10px;\r\n  right: 16px;\r\n}\r\n\r\n@media (max-width: 575.98px) {\r\n  #search-box-characters {\r\n    text-align: center;\r\n  }\r\n\r\n  #search-box {\r\n    max-width: 100%;\r\n  }\r\n\r\n  .has-search {\r\n    max-width: 100%;\r\n  }\r\n\r\n  .search-result li {\r\n    width: 100%;\r\n    height: 55px;\r\n    text-align: left;\r\n  }\r\n\r\n  .search-result li a img {\r\n    width: 55px;\r\n    height: 55px;\r\n  }\r\n\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNoYXJhY3RlcnMtc2VhcmNoLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnREFBZ0Q7RUFDaEQsVUFBVTtFQUNWLFlBQVk7RUFDWix5QkFBeUI7RUFDekIsZUFBZTtFQUNmLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxjQUFjO0VBQ2QscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFDQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLDhDQUE4QztFQUM5QyxtQkFBbUI7RUFDbkIsd0JBQXdCO0VBQ3hCLCtDQUErQztFQUMvQyx5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZiwyQkFBMkI7RUFDM0IsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLGlDQUFpQztFQUNqQyxhQUFhO0FBQ2Y7O0FBRUE7O0VBRUUsY0FBYztFQUNkLHdCQUF3QjtFQUN4QiwyQ0FBMkM7QUFDN0M7O0FBRUE7RUFDRSwyQ0FBMkM7QUFDN0M7O0FBR0E7RUFDRSxlQUFlO0VBQ2YsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxXQUFXO0FBQ2I7O0FBR0E7RUFDRTtJQUNFLGtCQUFrQjtFQUNwQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsV0FBVztJQUNYLFlBQVk7SUFDWixnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxXQUFXO0lBQ1gsWUFBWTtFQUNkOztBQUVGIiwiZmlsZSI6ImNoYXJhY3RlcnMtc2VhcmNoLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VhcmNoLXJlc3VsdCBsaSB7XHJcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHZhcigtLWJhY2tncm91bmQtY29sb3IpO1xyXG4gIHdpZHRoOiAzMCU7XHJcbiAgaGVpZ2h0OiA0NXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNGRkZGRkY7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcclxufVxyXG5cclxuLnNlYXJjaC1yZXN1bHQgbGk6aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM4ZDhkOGQ7XHJcbn1cclxuXHJcbi5zZWFyY2gtcmVzdWx0IGxpIGEge1xyXG4gIGNvbG9yOiAjODg4ODg4O1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5cclxuLnNlYXJjaC1yZXN1bHQgbGkgYTpob3ZlciB7XHJcbiAgY29sb3I6ICNGRkZGRkY7XHJcbn1cclxuLnNlYXJjaC1yZXN1bHQgbGkgYTphY3RpdmUge1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLnNlYXJjaC1yZXN1bHQgbGkgYSBpbWcge1xyXG4gIHdpZHRoOiA0NXB4O1xyXG4gIGhlaWdodDogNDVweDtcclxuICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG5cclxuI3NlYXJjaC1ib3gge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIG1heC13aWR0aDogMjk1cHg7XHJcbiAgaGVpZ2h0OiAzMnB4O1xyXG4gIG1hcmdpbi1yaWdodDogOHB4O1xyXG4gIGZvbnQ6IGl0YWxpYyBub3JtYWwgbm9ybWFsIDE2cHgvMjRweCAnUFQgU2Fucyc7XHJcbiAgbGV0dGVyLXNwYWNpbmc6IDBweDtcclxuICBjb2xvcjogdmFyKC0tdGV4dC1jb2xvcik7XHJcbiAgYmFja2dyb3VuZDogI0ZGRkZGRiAwJSAwJSBuby1yZXBlYXQgcGFkZGluZy1ib3g7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgI0U1RTVFNTtcclxuICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgbWFyZ2luLXRvcDogOHB4O1xyXG4gIHRyYW5zaXRpb246IGJveC1zaGFkb3cgMC4ycztcclxuICBwYWRkaW5nOiA0cHggOHB4O1xyXG59XHJcblxyXG4jc2VhcmNoLWJveDpmb2N1cyB7XHJcbiAgYm9yZGVyLWNvbG9yOiAjOGM4YzhkO1xyXG4gIGJveC1zaGFkb3c6IDBweCAwcHggNXB4ICMwMDAwMDAzMztcclxuICBvdXRsaW5lOiBub25lO1xyXG59XHJcblxyXG4jc2VhcmNoLWJveC1jaGFyYWN0ZXJzIGgxLFxyXG4jc2VhcmNoLWJveC1jaGFyYWN0ZXJzIHNwYW4ge1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIGNvbG9yOiB2YXIoLS10ZXh0LWNvbG9yKTtcclxuICBmb250OiBub3JtYWwgbm9ybWFsIDcwMCAxNnB4LzI0cHggJ1BUIFNhbnMnO1xyXG59XHJcblxyXG4jc2VhcmNoLWJveC1jaGFyYWN0ZXJzIGgxIHtcclxuICBmb250OiBub3JtYWwgbm9ybWFsIDcwMCAzMnB4LzMwcHggJ1BUIFNhbnMnO1xyXG59XHJcblxyXG5cclxudWwuc2VhcmNoLXJlc3VsdCB7XHJcbiAgbWFyZ2luLXRvcDogOHB4O1xyXG4gIHBhZGRpbmctbGVmdDogMDtcclxufVxyXG5cclxuLmhhcy1zZWFyY2gge1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBtYXgtd2lkdGg6IDI5NXB4O1xyXG4gIGhlaWdodDogMzJweDtcclxufVxyXG5cclxuLmhhcy1zZWFyY2ggPiAuaWNvbi1zZWFyY2gge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDEwcHg7XHJcbiAgcmlnaHQ6IDE2cHg7XHJcbn1cclxuXHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNTc1Ljk4cHgpIHtcclxuICAjc2VhcmNoLWJveC1jaGFyYWN0ZXJzIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcblxyXG4gICNzZWFyY2gtYm94IHtcclxuICAgIG1heC13aWR0aDogMTAwJTtcclxuICB9XHJcblxyXG4gIC5oYXMtc2VhcmNoIHtcclxuICAgIG1heC13aWR0aDogMTAwJTtcclxuICB9XHJcblxyXG4gIC5zZWFyY2gtcmVzdWx0IGxpIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiA1NXB4O1xyXG4gICAgdGV4dC1hbGlnbjogbGVmdDtcclxuICB9XHJcblxyXG4gIC5zZWFyY2gtcmVzdWx0IGxpIGEgaW1nIHtcclxuICAgIHdpZHRoOiA1NXB4O1xyXG4gICAgaGVpZ2h0OiA1NXB4O1xyXG4gIH1cclxuXHJcbn1cclxuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".search-result li {\r\n  border-bottom: 1px solid var(--background-color);\r\n  width: 30%;\r\n  height: 45px;\r\n  background-color: #FFFFFF;\r\n  cursor: pointer;\r\n  list-style-type: none;\r\n}\r\n\r\n.search-result li:hover {\r\n  background-color: #8d8d8d;\r\n}\r\n\r\n.search-result li a {\r\n  color: #888888;\r\n  display: block;\r\n  text-decoration: none;\r\n}\r\n\r\n.search-result li a:hover {\r\n  color: #FFFFFF;\r\n}\r\n\r\n.search-result li a:active {\r\n  color: white;\r\n}\r\n\r\n.search-result li a img {\r\n  width: 45px;\r\n  height: 45px;\r\n  margin-right: 8px;\r\n}\r\n\r\n#search-box {\r\n  width: 100%;\r\n  max-width: 295px;\r\n  height: 32px;\r\n  margin-right: 8px;\r\n  font: italic normal normal 16px/24px 'PT Sans';\r\n  letter-spacing: 0px;\r\n  color: var(--text-color);\r\n  background: #FFFFFF 0% 0% no-repeat padding-box;\r\n  border: 1px solid #E5E5E5;\r\n  border-radius: 4px;\r\n  margin-top: 8px;\r\n  transition: border-color 0.2s, box-shadow 0.2s;\r\n  padding: 4px 8px;\r\n}\r\n\r\n#search-box:focus {\r\n  border-color: #8c8c8d;\r\n  box-shadow: 0px 0px 5px #00000033;\r\n  outline: none;\r\n}\r\n\r\n#search-box-characters h1,\r\n#search-box-characters span {\r\n  display: block;\r\n  color: var(--text-color);\r\n  font: normal normal 700 16px/24px 'PT Sans';\r\n}\r\n\r\n#search-box-characters h1 {\r\n  font: normal normal 700 32px/30px 'PT Sans';\r\n}\r\n\r\nul.search-result {\r\n  margin-top: 8px;\r\n  padding-left: 0;\r\n}\r\n\r\n.has-search {\r\n  position: relative;\r\n  max-width: 295px;\r\n  height: 32px;\r\n}\r\n\r\n.has-search > .icon-search {\r\n  position: absolute;\r\n  top: 10px;\r\n  right: 16px;\r\n}\r\n\r\n@media (max-width: 575.98px) {\r\n  #search-box-characters {\r\n    text-align: center;\r\n  }\r\n\r\n  #search-box {\r\n    max-width: 100%;\r\n  }\r\n\r\n  .has-search {\r\n    max-width: 100%;\r\n  }\r\n\r\n  .search-result li {\r\n    width: 100%;\r\n    height: 55px;\r\n    text-align: left;\r\n  }\r\n\r\n  .search-result li a img {\r\n    width: 55px;\r\n    height: 55px;\r\n  }\r\n\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNoYXJhY3RlcnMtc2VhcmNoLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnREFBZ0Q7RUFDaEQsVUFBVTtFQUNWLFlBQVk7RUFDWix5QkFBeUI7RUFDekIsZUFBZTtFQUNmLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxjQUFjO0VBQ2QscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFDQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLDhDQUE4QztFQUM5QyxtQkFBbUI7RUFDbkIsd0JBQXdCO0VBQ3hCLCtDQUErQztFQUMvQyx5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZiw4Q0FBOEM7RUFDOUMsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLGlDQUFpQztFQUNqQyxhQUFhO0FBQ2Y7O0FBRUE7O0VBRUUsY0FBYztFQUNkLHdCQUF3QjtFQUN4QiwyQ0FBMkM7QUFDN0M7O0FBRUE7RUFDRSwyQ0FBMkM7QUFDN0M7O0FBR0E7RUFDRSxlQUFlO0VBQ2YsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxXQUFXO0FBQ2I7O0FBR0E7RUFDRTtJQUNFLGtCQUFrQjtFQUNwQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsV0FBVztJQUNYLFlBQVk7SUFDWixnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxXQUFXO0lBQ1gsWUFBWTtFQUNkOztBQUVGIiwiZmlsZSI6ImNoYXJhY3RlcnMtc2VhcmNoLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VhcmNoLXJlc3VsdCBsaSB7XHJcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHZhcigtLWJhY2tncm91bmQtY29sb3IpO1xyXG4gIHdpZHRoOiAzMCU7XHJcbiAgaGVpZ2h0OiA0NXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNGRkZGRkY7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcclxufVxyXG5cclxuLnNlYXJjaC1yZXN1bHQgbGk6aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM4ZDhkOGQ7XHJcbn1cclxuXHJcbi5zZWFyY2gtcmVzdWx0IGxpIGEge1xyXG4gIGNvbG9yOiAjODg4ODg4O1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5cclxuLnNlYXJjaC1yZXN1bHQgbGkgYTpob3ZlciB7XHJcbiAgY29sb3I6ICNGRkZGRkY7XHJcbn1cclxuLnNlYXJjaC1yZXN1bHQgbGkgYTphY3RpdmUge1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLnNlYXJjaC1yZXN1bHQgbGkgYSBpbWcge1xyXG4gIHdpZHRoOiA0NXB4O1xyXG4gIGhlaWdodDogNDVweDtcclxuICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG5cclxuI3NlYXJjaC1ib3gge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIG1heC13aWR0aDogMjk1cHg7XHJcbiAgaGVpZ2h0OiAzMnB4O1xyXG4gIG1hcmdpbi1yaWdodDogOHB4O1xyXG4gIGZvbnQ6IGl0YWxpYyBub3JtYWwgbm9ybWFsIDE2cHgvMjRweCAnUFQgU2Fucyc7XHJcbiAgbGV0dGVyLXNwYWNpbmc6IDBweDtcclxuICBjb2xvcjogdmFyKC0tdGV4dC1jb2xvcik7XHJcbiAgYmFja2dyb3VuZDogI0ZGRkZGRiAwJSAwJSBuby1yZXBlYXQgcGFkZGluZy1ib3g7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgI0U1RTVFNTtcclxuICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgbWFyZ2luLXRvcDogOHB4O1xyXG4gIHRyYW5zaXRpb246IGJvcmRlci1jb2xvciAwLjJzLCBib3gtc2hhZG93IDAuMnM7XHJcbiAgcGFkZGluZzogNHB4IDhweDtcclxufVxyXG5cclxuI3NlYXJjaC1ib3g6Zm9jdXMge1xyXG4gIGJvcmRlci1jb2xvcjogIzhjOGM4ZDtcclxuICBib3gtc2hhZG93OiAwcHggMHB4IDVweCAjMDAwMDAwMzM7XHJcbiAgb3V0bGluZTogbm9uZTtcclxufVxyXG5cclxuI3NlYXJjaC1ib3gtY2hhcmFjdGVycyBoMSxcclxuI3NlYXJjaC1ib3gtY2hhcmFjdGVycyBzcGFuIHtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICBjb2xvcjogdmFyKC0tdGV4dC1jb2xvcik7XHJcbiAgZm9udDogbm9ybWFsIG5vcm1hbCA3MDAgMTZweC8yNHB4ICdQVCBTYW5zJztcclxufVxyXG5cclxuI3NlYXJjaC1ib3gtY2hhcmFjdGVycyBoMSB7XHJcbiAgZm9udDogbm9ybWFsIG5vcm1hbCA3MDAgMzJweC8zMHB4ICdQVCBTYW5zJztcclxufVxyXG5cclxuXHJcbnVsLnNlYXJjaC1yZXN1bHQge1xyXG4gIG1hcmdpbi10b3A6IDhweDtcclxuICBwYWRkaW5nLWxlZnQ6IDA7XHJcbn1cclxuXHJcbi5oYXMtc2VhcmNoIHtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgbWF4LXdpZHRoOiAyOTVweDtcclxuICBoZWlnaHQ6IDMycHg7XHJcbn1cclxuXHJcbi5oYXMtc2VhcmNoID4gLmljb24tc2VhcmNoIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAxMHB4O1xyXG4gIHJpZ2h0OiAxNnB4O1xyXG59XHJcblxyXG5cclxuQG1lZGlhIChtYXgtd2lkdGg6IDU3NS45OHB4KSB7XHJcbiAgI3NlYXJjaC1ib3gtY2hhcmFjdGVycyB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG5cclxuICAjc2VhcmNoLWJveCB7XHJcbiAgICBtYXgtd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG5cclxuICAuaGFzLXNlYXJjaCB7XHJcbiAgICBtYXgtd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG5cclxuICAuc2VhcmNoLXJlc3VsdCBsaSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogNTVweDtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgfVxyXG5cclxuICAuc2VhcmNoLXJlc3VsdCBsaSBhIGltZyB7XHJcbiAgICB3aWR0aDogNTVweDtcclxuICAgIGhlaWdodDogNTVweDtcclxuICB9XHJcblxyXG59XHJcbiJdfQ== */");
 
 /***/ }),
 
@@ -1366,7 +1290,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ng-container *ngIf=\"listCharacters; let characters; else loading\">\n  <div class=\"container container-in\" *ngIf=\"characters.data?.results.length; else loading\">\n    <div class=\"row\">\n      <div class=\"col-xl-12\">\n        <div class=\"search-characters my-4\">\n          <app-characters-search></app-characters-search>\n        </div>\n      </div>\n    </div>\n    <table class=\"table table-borderless characters-list\">\n      <thead>\n        <tr>\n          <th colspan=\"2\" scope=\"col\">Personagem</th>\n          <th class=\"hidden-sm\" scope=\"col\">Séries</th>\n          <th class=\"hidden-sm\" scope=\"col\">Eventos</th>\n        </tr>\n      </thead>\n      <tbody>\n        <ng-container *ngFor=\"let character of characters.data?.results | paginate: configPagination\">\n            <tr routerLink=\"/characters/{{ character.id }}\" routerLinkActive=\"active-link\">\n              <td>\n                <div class=\"thumb\" style=\"background-image: url('{{ character.thumbnail.path }}.{{ character.thumbnail.extension }}')\"></div>\n              </td>\n              <td>\n                <div class=\"character-name\">\n                  {{ character.name }}\n                </div>\n              </td>\n              <td class=\"character-items hidden-sm\">\n                <ng-container *ngFor=\"let serie of character.series?.items | slice: 0:3\">\n                  {{serie.name}}<br>\n                </ng-container>\n              </td>\n              <td class=\"character-items hidden-sm\">\n                <ng-container *ngFor=\"let event of character.events?.items | slice: 0:3\">\n                  {{event.name}}<br>\n                </ng-container>\n              </td>\n            </tr>\n            <div class=\"spacer\"></div>\n        </ng-container>\n      </tbody>\n    </table>\n\n    <pagination-controls\n      id=\"characters-pagination\"\n      (pageChange)=\"pageChange($event)\"\n      autoHide=\"true\"\n      responsive=\"true\"\n      previousLabel=\"\"\n      nextLabel=\"\">\n    </pagination-controls>\n  </div>\n\n</ng-container>\n\n<ng-template #loading>\n  <app-loader [fullLoader]=\"true\"></app-loader>\n</ng-template>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ng-container *ngIf=\"listCharacters; let characters; else loading\">\n  <div class=\"container container-in\" *ngIf=\"characters.data?.results.length; else loading\">\n    <div class=\"row\">\n      <div class=\"col-xl-12\">\n        <div class=\"search-characters my-4\">\n          <app-characters-search></app-characters-search>\n        </div>\n      </div>\n    </div>\n    <table class=\"table table-borderless characters-list\">\n      <thead>\n        <tr>\n          <th colspan=\"2\" scope=\"col\">Personagem</th>\n          <th class=\"hidden-sm\" scope=\"col\">Séries</th>\n          <th class=\"hidden-sm\" scope=\"col\">Eventos</th>\n        </tr>\n      </thead>\n      <tbody>\n        <ng-container *ngFor=\"let character of characters.data?.results | paginate: { itemsPerPage: itemsPerPage, currentPage: page, id: 'characters-pagination' }\">\n            <tr routerLink=\"/characters/{{ character.id }}\" routerLinkActive=\"active-link\">\n              <td>\n                <div class=\"thumb\" style=\"background-image: url('{{ character.thumbnail.path }}.{{ character.thumbnail.extension }}')\"></div>\n              </td>\n              <td>\n                <div class=\"character-name\">\n                  {{ character.name }}\n                </div>\n              </td>\n              <td class=\"character-items hidden-sm\">\n                <ng-container *ngFor=\"let serie of character.series?.items | slice: 0:3\">\n                  {{serie.name}}<br>\n                </ng-container>\n              </td>\n              <td class=\"character-items hidden-sm\">\n                <ng-container *ngFor=\"let event of character.events?.items | slice: 0:3\">\n                  {{event.name}}<br>\n                </ng-container>\n              </td>\n            </tr>\n            <div class=\"spacer\"></div>\n        </ng-container>\n      </tbody>\n    </table>\n\n    <pagination-controls\n      id=\"characters-pagination\"\n      (pageChange)=\"page = $event\"\n      autoHide=\"true\"\n      responsive=\"true\"\n      previousLabel=\"\"\n      nextLabel=\"\">\n    </pagination-controls>\n  </div>\n\n</ng-container>\n\n<ng-template #loading>\n  <app-loader [fullLoader]=\"true\"></app-loader>\n</ng-template>\n");
 
 /***/ }),
 
